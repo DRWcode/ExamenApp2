@@ -1,4 +1,6 @@
-﻿namespace ExamenApp2
+﻿using ExamenApp2.Views;
+
+namespace ExamenApp2
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new ProveedorMainPage());
         }
     }
 }
